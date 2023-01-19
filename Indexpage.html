@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Indexpage.css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topsection">
+        <div class="container">
+            <header>
+                <img src="pictures/logo.png" id="logo">
+                
+                <nav>
+                    <a href="#" class="hide-desktop">
+                        <img src="pictures/ham.svg" alt="toggle menu" class="menu" id="menu">
+                    </a>
+                    <ul class="show-desktop hide-mobile" id="nav">
+                        <li id="exit" class="exit-btn hide-desktop">
+                            <img src="pictures/exit2.png" alt="exit menu">
+                        </li>
+                        <li><a  href="#home">Home</a></li>
+                        <li><a  href="#checkout">Checkout</a></li>
+                        <li><a  href="Signuppage.html">Signup</a></li>
+                        <li><a  href="Loginpage.html">Login</a></li>
+                        <li><a  href="#more">More</a></li>
+                    </ul>
+                
+                </nav>
+            </header>
+                <h2>Welcome!</h2>
+                <h4>Lets get your order</h4>
+        
+                <input type="text" placeholder="Search our delicious meals"  id="searchbox">
+        </div>
+    </div>
+    <div class="mainsection">
+            <div class="container images">
+                <table >
+                    <tr>
+                        <td><img src="pictures/jollof.jpg"alt="Jollofrice" ></td>
+                        <td><img src="pictures/amala.jpg"alt="Amala" ></td>
+                        <td><img src="pictures/pasta.jpg"alt="pasta" ></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Jollof Rice</h3></td>
+                        <td><h3> Amala</h3></td>
+                        <td><h3>Pasta</h3></td>
+                    </tr>
+                </table>
+                
+                <a class="viewall" href="Orderingpage.html">View all</a>
+                <h2 class="heading">Popular</h2>
+                <img src="pictures/rice.jpg"alt="whiterice" id="popularimage">
+                <h2>Whiterice & chicken</h2>
+            <div>
+                
+     </div>
+        
+           
+        </div>
+        <div class="bottomsection">
+            <div class="container">
+                <footer>
+
+                </footer>
+            </div>
+
+        </div>
+    </div>
+    <div class="bottomsection">
+        <footer></footer>
+    </div>
+    <script>
+    
+        var menu = document.getElementById('menu');
+        var nav = document.getElementById('nav');
+        var exit = document.getElementById('exit');
+
+        menu.addEventListener('click', function(e) {
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e) {
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+
+    </script>
+</body>
+</html>
